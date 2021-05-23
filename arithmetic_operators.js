@@ -36,4 +36,11 @@ console.log(+g + 3); //+g = 1
 
 let v = 2;
 let z = 2;
-console.log(++v); //1+2=3
+console.log(++v); //1+2=3 - prefix increment
+//If '++' after variable, increment will increase by 1 after re-call variable 
+console.log(v++); //3 - post increment
+console.log(v); //4
+
+//But non-number are converted
+console.log(+true); //1
+console.log(+false); //0
