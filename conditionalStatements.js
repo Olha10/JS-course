@@ -32,7 +32,7 @@ else {
     console.log('Good evening!');
 }*/
 
-//Ternary opeerator
+//Ternary opeerator - const ternarCond = "some condition" ? true value : false value
 let name = 'Test';
 let matchName = name == 'Test' ? true : false;
 console.log(matchName);
