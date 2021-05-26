@@ -4,10 +4,10 @@ const ternarCondition = (age>=18 && age<=90) ? true : false;
 console.log(ternarCondition);
 
 //2 ex.
-// let name = prompt("Будь ласка, введіть своє ім'я");
-// alert ('Привіт, '+ name + ', приємно познайомитися.');
-// let age = prompt("Будь ласка, введіть рік народження");
-// alert ("Вам " + (2021-age) +  " років");
+let name = prompt("Будь ласка, введіть своє ім'я");
+alert ('Привіт, '+ name + ', приємно познайомитися.');
+let age = prompt("Будь ласка, введіть рік народження");
+alert ("Вам " + (2021-age) +  " років");
 
 //3 ex.
 let num = 92;
@@ -30,7 +30,8 @@ else if (num < 100){
 //4 ex.
 let language = 'chinese';
 switch (language) {
-    case 'chinese' || 'mandarin':
+    case 'chinese':
+    case 'mandarin':
         console.log('MOST number of native speakers!');
         break;
     case 'spanish':
