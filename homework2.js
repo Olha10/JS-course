@@ -5,9 +5,20 @@ console.log(ternarCondition);
 
 //2 ex.
 let name = prompt("Будь ласка, введіть своє ім'я");
-alert ('Привіт, '+ name + ', приємно познайомитися.');
-let age = prompt("Будь ласка, введіть рік народження");
-alert ("Вам " + (2021-age) +  " років");
+if (name){
+    alert (`Привіт, ${name} , приємно познайомитися.`);
+} else {
+    alert('Please type valid name');
+}
+let birthday = prompt("Будь ласка, введіть рік народження");
+if (birthday){
+    const currentYear = new Date();
+    let age = currentYear.getFullYear() - birthday;
+    alert (`Вам ${age} років`);
+} else {
+    alert('Please type valid birthday');
+}
+
 
 //3 ex.
 let num = 92;

@@ -1,12 +1,24 @@
-// let result;
-// if (a + b < 10) {
-// result = 'Few';
-// } else {
-// result = 'Many';
-// }
+let post = {
+    title: 'Some title',
+     body: 'Some body',
+    author: 'some author',
+    views: 100,
+comment: {
+    firstName: 'Olha',
+    lastName: 'Kravchenko',
+    body: 'Some comment body'
+},
+isLive: true,
+someFunction: function result() {
+    console.log('my function works')
+}
+};
 
+// console.log(post.comment.body);
+// console.log(post['comment']['body']);
+//     console.log(post.someFunction());
+//     console.log(post['someFunction']());
 
-const a = 1;
-const b = 2;
-const result = (a + b < 10) ?  'Few' : 'Many';
-console.log(result);
+function getValues (post) {
+    console.log(post);
+}
