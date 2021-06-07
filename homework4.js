@@ -3,16 +3,38 @@
 повинно вивести 5*/
 
 const numbers = [1, -1, 2, 3];
-function sumFunc(numbers) {
-    if (!Array.isArray(numbers)) return;
+function sumFunc(arr) {
+    if (!Array.isArray(arr)) return; // verify input data
     let sum = 0;
-    numbers.forEach(each => {
+    arr.forEach(each => {
         sum += each;
     });
     return sum; 
     };
     console.log(sumFunc(numbers)); 
 
+//or
+function sum(array){
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum
+};
+console.log(sum(numbers));
+
+//or
+const sum1 = (arr) => {
+    let res = 0;
+    for (let val of arr){
+        res += val
+    }
+    return res
+};
+
+//or
+let reduce = numbers.reduce((sum, current) => sum +current,0);
+console.log(reduce);
 /*Завдання 2
 Коли ви запускаєте функцію arrayFromRange, функція повинна виводити числа від мінімального до максимального значення в форматі масиву
 Також ця функція повинна приймати від'ємні числа
@@ -24,18 +46,44 @@ console.log(numbers); // повинно повернути [1, 2, 3, 4]
 const negativeNumbers = arrayFromRange(-10, -8);
 console.log(negativeNumbers); // повинно повернути [-10, -9, -8]
 */
-
-
-
+function arrayFromRange(min, max){
+    let length = max-min;
+    let arr = new Array();
+    for (let i = 0; i < length; i++){
+        let a = min++;
+        arr.push(a);
+    }
+    arr.push(max);
+    return arr;
+};
+const numbers = arrayFromRange(1,4);
+//or
+function arrayFromRange(min, max){
+    let resArr = [];
+    for (let i = min; i <= max; resArr.push(i)); //look at the correct variant
+    return arr;
+};
 /*Завдання 3
 Потрібно створити функцію, яка повертатиме максимальне число з масиву
 */
 const numbers3 = [1, 2, 3, 4, 5];
-function getMax() {
-let max = Math.max(...numbers3)
-return console.log(max)
+function getMax(arr) {
+let max = Math.max(...arr)
+return max
 };
-getMax();
+console.log(getMax(numbers3));
+
+//or
+function getMax1 (arr){
+    let maxNumb = 0;
+    for (let numb of arr){
+        if (numb > maxNumb){
+            maxNumb = numb;
+        }
+    }
+    return maxNumb;
+};
+console.log(getMax1(numbers3));
 
 /*Завдання 4
 Завдання складається з 3 частин

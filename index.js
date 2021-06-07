@@ -33,9 +33,3 @@
 // let b = post[post.length - 1];
 // console.log(b);
 // console.log(post[4]());
-const array1 = ['a', 'b', 'c'];
-const iterator = array1.values();
-
-for (const value of iterator) {
-  console.log(value);
-};
