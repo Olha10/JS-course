@@ -1,0 +1,20 @@
+{
+  "name": "crypto-project",
+  "version": "1.0.0",
+  "description": "My first crypto-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crypto",
+    "blockchain"
+  ],
+  "author": "O.Kravchenko",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
